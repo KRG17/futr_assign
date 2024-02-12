@@ -1,0 +1,80 @@
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Footer styles */
+.footer {
+  @apply text-white flex flex-wrap justify-between items-end px-4 pt-10;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+/* Footer section */
+.footer-section {
+  @apply flex flex-col mb-4; /* Adjust max-width and margin as needed */
+}
+
+/* Footer section heading */
+.footer-section h3 {
+  @apply text-base font-bold mb-2;
+}
+
+/* Additional Links list */
+.footer-section ul {
+  @apply list-none pl-0; /* Remove default padding */
+}
+
+/* Additional Links list items */
+.footer-section ul li {
+  @apply mb-2 text-sm hover:text-gray-200;
+}
+
+/* Contact form */
+.contact-form {
+  @apply flex flex-col w-full;
+}
+
+/* Input group for form */
+.input-group {
+  @apply flex mb-2;
+}
+
+/* Form inputs */
+.input-group input {
+  @apply w-full p-2 mr-2 rounded border border-gray-700 bg-white text-white;
+}
+
+/* Form textarea */
+textarea {
+  @apply w-full p-2 rounded border border-gray-700 bg-white text-white;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    @apply w-full; /* Use `w-full` instead of `max-width-full` */
+  }
+}
+
+/* Social media icons */
+.social-media {
+  @apply list-none flex justify-center mb-4; /* Center align icons and add bottom margin */
+}
+
+.social-media li {
+  @apply mx-2; /* Add margin to each icon */
+}
+
+.social-media li a img {
+  @apply w-6 h-6; /* Adjust icon width and height */
+}
+
+.social-media li a:hover img {
+  @apply filter hover:brightness-125; /* Add hover effect to brighten icon */
+}
+
+.subscribe {
+  @apply w-1/6 bg-black m-2 p-2 flex justify-end; /* Add justify-end to align items to the right */
+}
+
+.subscribe button {
+  @apply text-white; /* Add text color styling */
+}

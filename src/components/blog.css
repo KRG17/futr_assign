@@ -1,0 +1,65 @@
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Blog styles */
+.blog {
+  @apply bg-white py-12;
+}
+
+.blog .container {
+  @apply mx-auto px-4;
+}
+
+.blog .titlepage {
+  @apply text-center mb-10;
+}
+
+.blog .titlepage h2 {
+  @apply text-3xl font-bold text-gray-800;
+}
+
+.blog .titlepage span {
+  @apply text-lg text-gray-600;
+}
+
+.blog .row {
+  @apply flex flex-wrap justify-center;
+}
+
+.blog-box {
+  @apply w-2/6 mx-4 mb-8 bg-white shadow-lg rounded-lg overflow-hidden;
+}
+
+.blog-box figure {
+  @apply relative;
+}
+
+.blog-box figure img {
+  @apply w-full h-auto;
+}
+
+.blog-box figure span {
+  @apply absolute top-0 right-0 bg-blue-600 text-white py-1 px-3 text-sm font-bold rounded-bl-lg;
+}
+
+.blog-box .travel {
+  @apply px-4 py-2 text-gray-600;
+}
+
+.blog-box .travel span {
+  @apply block mb-2;
+}
+
+.blog-box .travel p {
+  @apply mb-2;
+}
+
+.blog-box h3 {
+  @apply px-4 py-2 text-2xl font-bold text-gray-800;
+}
+
+.blog-box p {
+  @apply px-4 py-2 text-gray-700;
+}
