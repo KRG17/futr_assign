@@ -1,12 +1,15 @@
 .header {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url("../assets/images/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  height: 120px;
 }
-
+.row2 {
+  margin-right: 120px;
+}
 .top-bar {
   display: flex;
   height: 6vh;
@@ -31,6 +34,8 @@
   position: absolute;
   top: 0;
   right: 0;
+  /* margin-right: 0; */
+  /* width: ; */
   padding: 14px; /* Adjust padding as needed */
   color: #9ca3af; /* Adjust text color as needed */
   background-color: #ffffff;
@@ -39,7 +44,7 @@
 
 .header_information ul {
   display: flex;
-  gap: 20px; /* Adjust gap as needed */
+  gap: 80px; /* Adjust gap as needed */
 }
 
 .header_information li {
@@ -54,33 +59,35 @@
 .top_arrow {
   display: flex;
   justify-content: flex-end;
-  width: 40%;
+  /* width: %; */
+  margin-right: 40px;
 }
 
 .logo {
   width: 12rem; /* Adjust width as needed */
   height: auto;
-  margin-left: 1.5rem; /* Adjust margin as needed */
+  /* margin-right: 150px; */
+  margin-left: 120px;
 }
 
 .menu-area {
   position: absolute;
   bottom: 1rem; /* Adjust bottom spacing as needed */
-  right: 3.75rem; /* Adjust right spacing as needed */
+  right: 17.25rem; /* Adjust right spacing as needed */
   display: flex;
-  gap: 1rem; /* Adjust gap as needed */
+  gap: 3rem; /* Adjust gap as needed */
 }
 
 .menu-area ul {
   list-style: none;
-  display: flex;
-  gap: 1rem; /* Adjust gap as needed */
+  display: inline-flex;
+  gap: 3rem; /* Adjust gap as needed */
 }
 
 .menu-area li a {
   color: #ffffff;
   font-weight: bold;
-  font-size: 1rem; /* Adjust font size as needed */
+  font-size: 1.25rem; /* Adjust font size as needed */
   text-decoration: none;
   transition: color 0.3s ease;
 }

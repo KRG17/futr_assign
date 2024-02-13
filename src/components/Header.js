@@ -20,7 +20,7 @@ const Header = () => {
                       alt="#"
                     />
                   </div>
-                  <div className="header_information">
+                  <div className="header_information w-6/12">
                     <ul>
                       <li>
                         <img
@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </div>
         <div className="container">
-          <div className="row">
+          <div className="row2">
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
               <div className="full">
                 <div className="center-desk">
