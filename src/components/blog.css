@@ -5,7 +5,7 @@
 
 /* Blog styles */
 .blog {
-  @apply bg-white py-12;
+  @apply py-12;
 }
 
 .blog .container {
@@ -17,7 +17,7 @@
 }
 
 .blog .titlepage h2 {
-  @apply text-3xl font-bold text-gray-800;
+  @apply text-4xl font-bold text-gray-800;
 }
 
 .blog .titlepage span {
@@ -29,7 +29,7 @@
 }
 
 .blog-box {
-  @apply w-2/6 mx-4 mb-8 bg-white shadow-lg rounded-lg overflow-hidden;
+  @apply mx-4 mb-8 bg-white overflow-hidden;
 }
 
 .blog-box figure {
@@ -41,7 +41,7 @@
 }
 
 .blog-box figure span {
-  @apply absolute top-0 right-0 bg-blue-600 text-white py-1 px-3 text-sm font-bold rounded-bl-lg;
+  @apply absolute top-0 left-0 text-white p-4 text-sm;
 }
 
 .blog-box .travel {
@@ -57,9 +57,16 @@
 }
 
 .blog-box h3 {
-  @apply px-4 py-2 text-2xl font-bold text-gray-800;
+  @apply px-4 py-2 text-xl font-semibold text-black;
 }
 
 .blog-box p {
   @apply px-4 py-2 text-gray-700;
+}
+
+.comment {
+  @apply text-cyan-400;
+}
+.like {
+  @apply text-cyan-400;
 }

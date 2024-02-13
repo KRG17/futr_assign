@@ -1,0 +1,27 @@
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.amazing {
+  @apply relative overflow-hidden pb-52 px-48 flex items-center justify-center;
+  background-image: url("../assets/images/Amazing.jpg"); /* Corrected path to background image */
+  background-size: cover; /* Adjust background size as needed */
+  height: 60vh; /* Adjust height as needed */
+}
+
+.amazing-box {
+  @apply text-center text-white;
+}
+
+.amazing-box h2 {
+  @apply font-bold mb-4;
+}
+
+.amazing-box p {
+  @apply text-gray-200 mb-4;
+}
+
+.amazing-box a {
+  @apply py-2 px-10 text-white rounded-full;
+}

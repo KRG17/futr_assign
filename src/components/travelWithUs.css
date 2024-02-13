@@ -1,0 +1,75 @@
+/* travelWithUs.css */
+
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* travelWithUs.css */
+
+.travel-banner {
+  @apply relative py-10 flex justify-center items-center bg-center bg-no-repeat;
+}
+
+.travel-banner::before {
+  @apply absolute inset-0; /* Cover the entire area */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+  content: "";
+}
+
+.travel-banner .travel-content {
+  @apply relative z-10; /* Ensure the content appears above the overlay */
+}
+
+.travel-banner::after {
+  @apply absolute inset-0 bg-center bg-no-repeat;
+  background-image: url("../assets/images/travel-banner.jpeg"); /* Background image */
+  background-size: cover;
+  filter: brightness(80%); /* Adjust brightness level as needed */
+  content: "";
+}
+
+.travel-content {
+  @apply w-full max-w-screen-lg mx-auto flex flex-col items-center;
+}
+
+.text-center {
+  @apply mb-10;
+}
+
+.travel-heading {
+  @apply text-8xl font-bold mb-4 text-cyan-400;
+}
+
+.travel-subheading {
+  @apply text-8xl font-bold text-white;
+}
+
+.form-container {
+  @apply bg-white bg-opacity-90 shadow-md py-4 px-12;
+}
+
+.grid {
+  @apply gap-4;
+}
+
+.input-field,
+.select-field {
+  @apply w-full px-4 py-2 border text-base text-gray-400 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500;
+}
+
+.select-field {
+  @apply appearance-none;
+}
+
+.search-button {
+  @apply bg-orange-600 text-white px-20 py-2 text-lg cursor-pointer transition duration-300 ease-in-out;
+}
+
+.read-more {
+  @apply bg-orange-600 text-white px-16 py-4 text-base rounded-full cursor-pointer transition duration-300 ease-in-out;
+}
+
+.find-tour {
+  @apply bg-white font-bold text-sky-800 w-1/6 py-2 px-6;
+}

@@ -56,7 +56,7 @@ textarea {
 
 /* Social media icons */
 .social-media {
-  @apply list-none flex justify-center mb-4; /* Center align icons and add bottom margin */
+  @apply list-none flex mb-4; /* Center align icons and add bottom margin */
 }
 
 .social-media li {

@@ -10,7 +10,7 @@ function Footer() {
       className="footer text-white justify-center items-end"
       style={{ backgroundColor: "#022739" }}
     >
-      <div className="social-media justify-center mb-4 gap-4 ml-24">
+      <div className="social-media w-5/6 mb-4 gap-4 mr-12">
         <img
           className="w-4 h-3.5"
           src={facebook}

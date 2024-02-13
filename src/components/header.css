@@ -58,7 +58,7 @@
 }
 /* Logo */
 .logo {
-  @apply w-48 h-48 ml-28 pl-12 mt-0;
+  @apply w-48 h-48 ml-8 pl-12 mt-0;
 }
 
 /* Menu */

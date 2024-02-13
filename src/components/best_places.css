@@ -1,0 +1,63 @@
+/* Import basic Tailwind classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles for the Tours component */
+.Tours {
+  @apply bg-gray-100; /* Add a light gray background */
+  padding-top: 100px; /* Add some top padding */
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; /* Set container width and padding */
+}
+
+.titlepage {
+  @apply text-center mb-10; /* Center text and add bottom margin */
+}
+
+.titlepage h2 {
+  @apply text-4xl font-bold tracking-wider; /* Increase font size and weight */
+}
+
+.titlepage span {
+  @apply text-gray-600 text-lg; /* Set text color and size */
+  line-height: 1.7; /* Adjust line height */
+}
+
+#demos {
+  @apply mt-20; /* Add margin-top */
+}
+
+.owl-carousel {
+  @apply flex flex-wrap gap-4; /* Adjust item spacing */
+}
+
+.item {
+  @apply bg-white rounded-lg shadow-md p-4; /* Add background, border, and padding */
+  transition: transform 0.3s ease-in-out; /* Add hover effect transition */
+}
+
+.item:hover {
+  @apply transform scale-105; /* Apply hover transform effect */
+}
+
+.item img {
+  @apply object-cover w-full h-48; /* Set image dimensions */
+}
+
+.item h3 {
+  @apply text-xl font-bold mt-4; /* Increase font size and weight, add margin-top */
+}
+
+.item p {
+  @apply text-gray-600 leading-loose; /* Set text color and line height */
+}
+
+/* Optional media query for smaller screens */
+@media (max-width: 768px) {
+  .item {
+    @apply flex flex-col items-center; /* Stack items vertically on small screens */
+  }
+}
