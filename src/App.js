@@ -6,6 +6,8 @@ import Blog from "./components/Blog"
 import Travel from "./components/Travel"
 import BestPlaces from "./components/Best_places"
 import TravelWithUs from "./components/TravelWithUs"
+import AboutUs from "./components/AboutUs"
+import London from "./components/London"
 
 const App = () => {
   return (
@@ -13,8 +15,8 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <TravelWithUs />
-        <Travel />
-        <Blog />
+        <London />
+        <BestPlaces />
       </BrowserRouter>
     </div>
   )

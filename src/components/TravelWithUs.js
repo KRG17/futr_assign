@@ -1,7 +1,4 @@
-// TravelWithUs.js
-
-import React from "react"
-import "./travelWithUs.css"
+import "../styles/travelWithUs.css"
 import travelImage from "../assets/images/travel-banner.jpeg"
 
 const TravelWithUs = () => {

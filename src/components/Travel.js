@@ -1,5 +1,4 @@
-import React from "react"
-import "./travel.css"
+import "../styles/travel.css"
 
 const Travel = () => {
   return (

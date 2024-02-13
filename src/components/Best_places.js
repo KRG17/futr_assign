@@ -1,4 +1,4 @@
-import "./best_places.css"
+import "../styles/best_places.css"
 import tour_f from "../assets/images/tour_first.jpg"
 import tour_s from "../assets/images/tour_second.jpg"
 import tour_t from "../assets/images/tour_third.jpg"
@@ -10,28 +10,33 @@ const Best_places = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="titlepage">
-              <h2 className="text-center">The Best Tours</h2>
+              <div class="flex items-center mb-8 px-96">
+                <div class="flex-1 h-px bg-teal-400"></div>
+                <h2 class="mx-4 text-center">BEST PLACES AROUND</h2>
+                <div class="flex-1 h-px bg-teal-400"></div>
+              </div>
               <span className="text-center block">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters.
+                The point of using <br />
+                Lorem Ipsum is that it has a more-or-less normal distribution of
+                letters.
               </span>
             </div>
           </div>
         </div>
-        <section id="demos">
+        <section id="demos ">
           <div className="row">
             <div className="col-md-12">
-              <div className="owl-carousel owl-theme">
+              <div className="owl-carousel">
                 <div className="item flex flex-wrap">
                   <img
                     className="img-responsive"
                     src={tour_f}
                     alt="#"
                   />
-                  <h3 className="text-center">Holiday Tour</h3>
-                  <p className="text-center">
+                  <h3 className="text-start">Holiday Tour</h3>
+                  <p className="text-start">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour, or randomised words which don't
@@ -44,8 +49,8 @@ const Best_places = () => {
                     src={tour_s}
                     alt="#"
                   />
-                  <h3 className="text-center">New York</h3>
-                  <p className="text-center">
+                  <h3 className="text-start">New York</h3>
+                  <p className="text-start">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour, or randomised words which don't
@@ -58,8 +63,8 @@ const Best_places = () => {
                     src={tour_t}
                     alt="#"
                   />
-                  <h3 className="text-center">London</h3>
-                  <p className="text-center">
+                  <h3 className="text-start">London</h3>
+                  <p className="text-start">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour, or randomised words which don't
@@ -70,6 +75,10 @@ const Best_places = () => {
             </div>
           </div>
         </section>
+        <div className="circles">
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+        </div>
       </div>
     </div>
   )

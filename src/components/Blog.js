@@ -1,5 +1,4 @@
-import React from "react"
-import "./blog.css"
+import "../styles/blog.css"
 import first_blog from "../assets/images/blog-image0.jpg"
 import second_blog from "../assets/images/blog-image.jpg"
 

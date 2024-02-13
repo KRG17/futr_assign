@@ -1,0 +1,59 @@
+/* aboutUs.css */
+
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about {
+  @apply py-12 items-center justify-center relative; /* Make the parent container relative */
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.titlepage {
+  @apply text-center;
+}
+
+.titlepage h2 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.bg {
+  @apply relative w-4/6 ml-60 py-10; /* Make the position relative */
+}
+
+.about-box {
+  @apply top-0 left-0 bg-white w-full border-teal-800 rounded-lg shadow-lg p-8 flex flex-col justify-between relative; /* Change to flex-col and adjust z-index */
+}
+
+.b1 {
+  border-width: 22px 16px;
+  border-image: linear-gradient(
+    230deg,
+    rgba(12, 26, 63, 1) 0%,
+    rgba(8, 122, 149, 1) 75%
+  );
+  border-image-slice: 1;
+}
+
+.plane-img-area {
+  @apply absolute right-0 top-0 bottom-0 overflow-hidden; /* Position the plane image absolutely on the right side */
+  @apply z-50; /* Set a higher z-index to ensure it's above the about box */
+  @apply pointer-events-none; /* Allow clicks to pass through */
+}
+
+.plane-img-area img {
+  @apply object-cover object-center; /* Resize and center image */
+  @apply h-full; /* Set full height */
+}
+
+.read-more-container {
+  @apply relative flex justify-center;
+}
+
+.read-more {
+  @apply bg-orange-600 text-white px-16 py-4 text-base rounded-full cursor-pointer transition duration-300 ease-in-out;
+}

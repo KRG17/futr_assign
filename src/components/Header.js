@@ -1,6 +1,4 @@
-import React from "react"
-
-import "./header.css"
+import "../styles/header.css"
 import logoImg from "../assets/images/logo-2.png"
 import mailIconImg from "../assets/images/mail_icon.png"
 import locationMarkerImg from "../assets/images/location_marker.png"
