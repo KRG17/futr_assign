@@ -8,7 +8,7 @@ const London = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="titlepage">
-              <div class="flex items-center mb-4 px-80">
+              <div class="flex items-center mb-4 px-48">
                 <div class="flex-1 h-px bg-teal-400"></div>
                 <h2 class="mx-4 font-bold">BEST THINGS TO DO, LONDON</h2>
                 <div class="flex-1 h-px bg-teal-400"></div>

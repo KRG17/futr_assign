@@ -18,9 +18,9 @@
 }
 
 .titlepage h2 {
-  @apply text-4xl font-bold mb-4;
+  @apply text-4xl font-bold;
 }
 
 .London-img {
-  @apply w-full mt-16; /* Adjust the margin-top as needed */
+  @apply w-full mt-0; /* Adjust the margin-top as needed */
 }

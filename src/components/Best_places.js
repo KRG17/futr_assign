@@ -10,7 +10,7 @@ const Best_places = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="titlepage">
-              <div class="flex items-center mb-8 px-96">
+              <div class="flex items-center mb-8 px-52">
                 <div class="flex-1 h-px bg-teal-400"></div>
                 <h2 class="mx-4 text-center">BEST PLACES AROUND</h2>
                 <div class="flex-1 h-px bg-teal-400"></div>

@@ -1,97 +1,90 @@
-/* Import Tailwind base styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Header styles */
 .header {
-  @apply relative overflow-hidden;
-  /* Adjust background image as needed */
+  position: relative;
+  overflow: hidden;
   background-image: url("../assets/images/header-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* Adjust background size as needed */
+  background-size: cover;
   background-position: top;
 }
 
-/* Top bar */
 .top-bar {
-  @apply flex;
-  height: 6vh; /* 10% of viewport height */
+  display: flex;
+  height: 6vh;
 }
 
-/* Left section of top bar */
 .left-section {
-  @apply w-2/5; /* 40% of parent width */
+  width: 40%;
 }
 
-/* Center section of top bar */
 .center-section {
-  @apply w-3/5 flex items-center justify-center; /* 60% of parent width */
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Right section of top bar */
 .right-section {
-  @apply w-2/5; /* 40% of parent width */
+  width: 40%;
 }
 
-/* Address information */
 .header_information {
-  @apply absolute top-0 right-0 p-3.5 text-gray-500 bg-white w-3/5; /* Change text color to lighter */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14px; /* Adjust padding as needed */
+  color: #9ca3af; /* Adjust text color as needed */
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 
-/* Increase gap between ul and li */
 .header_information ul {
-  @apply flex space-x-20; /* Adjust spacing as needed */
+  display: flex;
+  gap: 20px; /* Adjust gap as needed */
 }
 
-/* Add spacing between img and text */
 .header_information li {
-  @apply flex items-center; /* Align items center */
+  display: flex;
+  align-items: center;
 }
 
 .header_information li img {
-  @apply mr-2; /* Add margin-right */
-}
-.top_arrow {
-  @apply flex justify-end w-2/5;
-}
-/* Logo */
-.logo {
-  @apply w-48 h-48 ml-24 pl-12 mt-0;
+  margin-right: 8px; /* Adjust margin as needed */
 }
 
-/* Menu */
+.top_arrow {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.logo {
+  width: 12rem; /* Adjust width as needed */
+  height: auto;
+  margin-left: 1.5rem; /* Adjust margin as needed */
+}
+
 .menu-area {
-  @apply absolute bottom-4 right-60 flex;
-  @apply h-auto px-4 gap-10; /* Adjust height and padding as needed */
+  position: absolute;
+  bottom: 1rem; /* Adjust bottom spacing as needed */
+  right: 3.75rem; /* Adjust right spacing as needed */
+  display: flex;
+  gap: 1rem; /* Adjust gap as needed */
 }
 
 .menu-area ul {
-  @apply list-none flex space-x-4;
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Adjust gap as needed */
 }
 
 .menu-area li a {
-  @apply text-white text-lg font-bold hover:text-black;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem; /* Adjust font size as needed */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.menu-area-main {
-  @apply gap-8;
-}
-.container {
-  @apply h-16;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
-  .header_information {
-    @apply flex-wrap;
-  }
-  .menu-area {
-    @apply flex-col;
-  }
-  .menu-area li {
-    @apply flex justify-center;
-  }
+.menu-area li a:hover {
+  color: #000000; /* Adjust hover color as needed */
 }

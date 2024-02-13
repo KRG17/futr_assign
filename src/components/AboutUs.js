@@ -11,7 +11,7 @@ const AboutUs = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="titlepage">
-              <div class="flex items-center px-96">
+              <div class="flex items-center px-40">
                 <div class="flex-1 h-px bg-teal-400"></div>
                 <h2 class="mx-4 font-bold text-2xl">OUR JOURNEY OF TRAVEL</h2>
                 <div class="flex-1 h-px bg-teal-400"></div>
@@ -28,8 +28,10 @@ const AboutUs = () => {
       </div>
       <div className="bg mb-2 pl-12 pr-28">
         <div className="container2 flex justify-between">
-          <div className="about-box b1">
-            <p className="w-3/5">
+          <div className="about-box b1 w-2/3">
+            {" "}
+            {/* Adjust width of the about box */}
+            <p>
               <span>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
@@ -42,11 +44,15 @@ const AboutUs = () => {
               </span>
             </p>
           </div>
-          <div className="plane-img-area relative z-10">
+          <div className="plane-img-area absolute right-0 top-0 z-20">
+            {" "}
+            {/* Adjust position and z-index */}
             <img
               src={planeImage}
               alt="images"
-            />
+              className="w-36 h-36"
+            />{" "}
+            {/* Maintain size of the plane */}
           </div>
         </div>
       </div>

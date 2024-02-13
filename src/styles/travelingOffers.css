@@ -1,0 +1,55 @@
+/* travelingOffers.css */
+
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.traveling {
+  @apply py-8;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.titlepage {
+  @apply text-center;
+}
+
+.titlepage h2 {
+  @apply text-4xl font-bold;
+}
+
+.row {
+  @apply flex flex-wrap justify-around; /* Ensure flexbox layout with wrapping and centered alignment */
+}
+
+.col-xl-3,
+.col-lg-3 {
+  @apply w-1/4; /* Set the width to 1/4 of the container width */
+}
+
+.traveling-box {
+  @apply bg-white px-1 py-3 flex flex-col items-center text-center justify-between mb-6; /* Reduce padding and add margin */
+}
+
+.traveling-box h3 {
+  @apply text-2xl font-semibold my-2;
+}
+
+.traveling-box p {
+  @apply text-gray-600 my-1;
+}
+
+.read-more {
+  @apply mt-2 px-6 py-2;
+}
+
+.traveling-box img {
+  @apply w-36 h-36; /* Adjust the width and height of the icons */
+}
+
+.read-more a {
+  @apply text-white rounded; /* Adjust padding to make the button smaller */
+}
