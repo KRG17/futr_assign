@@ -1,12 +1,9 @@
-/* aboutUs.css */
-
-/* Import Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .about-section {
-  @apply py-12 items-center justify-center relative; /* Make the parent container relative */
+  @apply py-12 items-center justify-center relative;
 }
 
 .about-container {
@@ -22,7 +19,7 @@
 }
 
 .about-bg {
-  @apply relative w-4/6 ml-80 py-14; /* Make the position relative */
+  @apply relative w-4/6 ml-80 py-14;
 }
 
 .about-box {
@@ -40,14 +37,14 @@
 }
 
 .plane-img-container {
-  @apply absolute top-0 right-0 bottom-0 overflow-hidden; /* Position the plane image absolutely on the right side */
-  @apply z-20; /* Set a higher z-index to ensure it's above the about box */
-  @apply pointer-events-none; /* Allow clicks to pass through */
+  @apply absolute top-0 right-0 bottom-0 overflow-hidden;
+  @apply z-20;
+  @apply pointer-events-none;
 }
 
 .plane-img-container img {
-  @apply object-cover object-center; /* Resize and center image */
-  @apply h-full; /* Set full height */
+  @apply object-cover object-center;
+  @apply h-full;
 }
 
 .read-more-container {

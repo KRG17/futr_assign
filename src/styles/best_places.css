@@ -1,9 +1,8 @@
-/* Import Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 .Tours {
-  @apply py-10; /* Adjust padding as needed */
+  @apply py-10;
 }
 
 .container {
@@ -15,48 +14,47 @@
 }
 
 .titlepage h2 {
-  @apply text-4xl font-bold mb-1; /* Adjust font size and weight */
+  @apply text-4xl font-bold mb-1;
 }
 
 .titlepage span {
-  @apply mx-20; /* Adjust text color */
+  @apply mx-20;
 }
 
 .owl-carousel {
-  @apply flex items-start justify-start gap-2 px-44; /* Use flexbox with gap between items */
+  @apply flex items-start justify-start gap-2 px-44;
 }
 
 .item {
-  @apply flex-1; /* Take up equal space */
+  @apply flex-1;
 }
 
 .item img {
-  @apply w-full h-auto; /* Make image responsive */
+  @apply w-full h-auto;
 }
 .item h3 {
-  @apply text-xl font-semibold mb-2; /* Adjust font size and weight */
+  @apply text-xl font-semibold mb-2;
 }
 
 .item p {
-  @apply text-gray-600; /* Adjust text color */
+  @apply text-gray-600;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .demos {
-    @apply p-6; /* Adjust padding for smaller screens */
+    @apply p-6;
   }
   .item img {
-    @apply h-32; /* Adjust image height for smaller screens */
+    @apply h-32;
   }
 }
 .circles {
-  @apply relative mx-44 flex gap-3 mt-4 pb-6; /* Adjust position/spacing */
+  @apply relative mx-44 flex gap-3 mt-4 pb-6;
 }
 
 .circle1 {
-  @apply w-5 h-5 rounded-full bg-teal-400; /* Adjust size/color */
+  @apply w-5 h-5 rounded-full bg-teal-400;
 }
 .circle2 {
-  @apply w-5 h-5 rounded-full bg-black; /* Adjust size/color */
+  @apply w-5 h-5 rounded-full bg-black;
 }

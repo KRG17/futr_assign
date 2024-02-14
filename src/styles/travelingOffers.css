@@ -1,6 +1,3 @@
-/* travelingOffers.css */
-
-/* Import Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,16 +19,16 @@
 }
 
 .row {
-  @apply flex flex-wrap justify-around; /* Ensure flexbox layout with wrapping and centered alignment */
+  @apply flex flex-wrap justify-around;
 }
 
 .col-xl-3,
 .col-lg-3 {
-  @apply w-1/4; /* Set the width to 1/4 of the container width */
+  @apply w-1/4;
 }
 
 .traveling-box {
-  @apply bg-white px-1 py-3 flex flex-col items-center text-center justify-between mb-6; /* Reduce padding and add margin */
+  @apply bg-white px-1 py-3 flex flex-col items-center text-center justify-between mb-6;
 }
 
 .traveling-box h3 {
@@ -47,9 +44,9 @@
 }
 
 .traveling-box img {
-  @apply w-36 h-36; /* Adjust the width and height of the icons */
+  @apply w-36 h-36;
 }
 
 .read-more a {
-  @apply text-white rounded; /* Adjust padding to make the button smaller */
+  @apply text-white rounded;
 }

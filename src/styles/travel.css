@@ -1,13 +1,12 @@
-/* Import Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .amazing {
   @apply relative overflow-hidden pt-14 px-48 flex items-center justify-center;
-  background-image: url("../assets/images/Amazing.jpg"); /* Corrected path to background image */
-  background-size: cover; /* Adjust background size as needed */
-  height: 60vh; /* Adjust height as needed */
+  background-image: url("../assets/images/Amazing.jpg");
+  background-size: cover;
+  height: 60vh;
 }
 
 .amazing-box {

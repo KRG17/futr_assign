@@ -9,7 +9,7 @@ import TravelWithUs from "./components/TravelWithUs"
 import AboutUs from "./components/AboutUs"
 import London from "./components/London"
 import TravelingOffers from "./components/TravelingOffers"
-import Loading from "./components/Loading" // Import the Loading component
+import Loading from "./components/Loading"
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2000) // Simulate a 2-second loading time
+    }, 2000)
     return () => clearTimeout(timer)
   }, [])
 

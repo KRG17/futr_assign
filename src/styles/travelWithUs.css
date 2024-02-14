@@ -1,31 +1,26 @@
-/* travelWithUs.css */
-
-/* Import Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* travelWithUs.css */
 
 .travel-banner {
   @apply relative py-10 flex justify-center items-center bg-center bg-no-repeat;
 }
 
 .travel-banner::before {
-  @apply absolute inset-0; /* Cover the entire area */
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+  @apply absolute inset-0;
+  background: rgba(0, 0, 0, 0.3);
   content: "";
 }
 
 .travel-banner .travel-content {
-  @apply relative z-10; /* Ensure the content appears above the overlay */
+  @apply relative z-10;
 }
 
 .travel-banner::after {
   @apply absolute inset-0 bg-center bg-no-repeat;
-  background-image: url("../assets/images/travel-banner.jpeg"); /* Background image */
+  background-image: url("../assets/images/travel-banner.jpeg");
   background-size: cover;
-  filter: brightness(80%); /* Adjust brightness level as needed */
+  filter: brightness(80%);
   content: "";
 }
 

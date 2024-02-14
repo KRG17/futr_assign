@@ -34,17 +34,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  /* margin-right: 0; */
-  /* width: ; */
-  padding: 14px; /* Adjust padding as needed */
-  color: #9ca3af; /* Adjust text color as needed */
+  padding: 14px;
+  color: #9ca3af;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 
 .header_information ul {
   display: flex;
-  gap: 80px; /* Adjust gap as needed */
+  gap: 80px;
 }
 
 .header_information li {
@@ -53,45 +51,43 @@
 }
 
 .header_information li img {
-  margin-right: 8px; /* Adjust margin as needed */
+  margin-right: 8px;
 }
 
 .top_arrow {
   display: flex;
   justify-content: flex-end;
-  /* width: %; */
   margin-right: 40px;
 }
 
 .logo {
-  width: 12rem; /* Adjust width as needed */
+  width: 12rem;
   height: auto;
-  /* margin-right: 150px; */
   margin-left: 120px;
 }
 
 .menu-area {
   position: absolute;
-  bottom: 1rem; /* Adjust bottom spacing as needed */
-  right: 17.25rem; /* Adjust right spacing as needed */
+  bottom: 1rem;
+  right: 17.25rem;
   display: flex;
-  gap: 3rem; /* Adjust gap as needed */
+  gap: 3rem;
 }
 
 .menu-area ul {
   list-style: none;
   display: inline-flex;
-  gap: 3rem; /* Adjust gap as needed */
+  gap: 3rem;
 }
 
 .menu-area li a {
   color: #ffffff;
   font-weight: bold;
-  font-size: 1.25rem; /* Adjust font size as needed */
+  font-size: 1.25rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .menu-area li a:hover {
-  color: #000000; /* Adjust hover color as needed */
+  color: #000000;
 }
